@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 [{"Name":"Ringo","Instrument":"Drums"},{"Name":"Paul","Instrument":"Bass"}]
+=======
+[{"Name":"Ringo","Instrument":"Drums"},{"Name":"Paul","Instrument":"Bass"},{"Name":"George","Instrument":"Guitar"}]
+>>>>>>> 07ec6adda0891cb68e65447f5251b4ba7b01d0c3

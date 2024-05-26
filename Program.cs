@@ -44,8 +44,10 @@ namespace BeatlesMembersJson
 
             // Serialize the new Array and re-write the JSON file
             string jsonString = JsonSerializer.Serialize(beatles);
+
             File.WriteAllText("C:\\Users\\bream\\source\\repos\\arraysDemo\\json1.json", jsonString);
            
+            Console.ReadLine();
         }
     }
 }
