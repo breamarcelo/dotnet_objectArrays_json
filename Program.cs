@@ -1,4 +1,4 @@
-﻿using System.Diagnostics.Metrics;
+using System.Diagnostics.Metrics;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -17,7 +17,7 @@ namespace BeatlesMembersJson
         public static void Main(string[] args)
         {
             // Read the existing JSON file and parse as C# Array
-            var readFile = File.ReadAllText("C:\\Users\\bream\\source\\repos\\arraysDemo\\json1.json");
+            var readFile = File.ReadAllText("json1.json");
             var readJson = JsonNode.Parse(readFile).AsArray().ToArray();
 
             // Create a new Array where the read data will be stored
@@ -45,7 +45,7 @@ namespace BeatlesMembersJson
             // Serialize the new Array and re-write the JSON file
             string jsonString = JsonSerializer.Serialize(beatles);
 
-            File.WriteAllText("C:\\Users\\bream\\source\\repos\\arraysDemo\\json1.json", jsonString);
+            File.WriteAllText("json1.json", jsonString);
            
             Console.ReadLine();
         }
